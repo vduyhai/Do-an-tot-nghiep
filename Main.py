@@ -2,8 +2,11 @@ import cv2
 import numpy as np
 import time
 import PoseModule as pm
+import serial
 
-cap = cv2.VideoCapture("squat1.mp4")
+cap = cv2.VideoCapture(0)
+
+ser = serial.Serial()
 
 color = (255, 0, 255)
 detector = pm.poseDetector()
@@ -21,11 +24,11 @@ while True:
     #     # Right Arm
         angle = detector.findAngle(img, 23, 25, 27)
     #     # # Left Arm
-    #     angle1 = detector.findAngle(img, 24, 26, 28)
-        per = np.interp(angle, (182, 270), (0, 100))
+    #     angle1 = detector.findAngle(img, 11, 23, 25)
+        per = np.interp(angle, (185, 270), (0, 100))
         # per1 = np.interp(angle1, (90, 180), (0, 100))
 
-        bar = np.interp(angle, (182, 270), (650, 100))
+        bar = np.interp(angle, (185, 270), (650, 100))
         # print(angle, per)
     #     print(angle1, per1)
     #
@@ -41,24 +44,19 @@ while True:
             if dir == 1:
                 count += 0.5
                 dir = 0
-        print(count)
-    #
+        # print(count)
+
         # Draw Bar
         cv2.rectangle(img, (1100, 100), (1175, 650), color, 3)
         cv2.rectangle(img, (1100, int(bar)), (1175, 650), color, cv2.FILLED)
         cv2.putText(img, f'{int(per)} %', (1100, 75), cv2.FONT_HERSHEY_PLAIN, 4,
                     color, 4)
-    #
+
     #     # Draw Curl Count
     #     cv2.rectangle(img, (0, 450), (250, 720), (0, 255, 0), cv2.FILLED)
         cv2.putText(img, str(int(count)), (45, 670), cv2.FONT_HERSHEY_PLAIN, 15,
                     (255, 0, 0), 25)
-
-    # cTime = time.time()
-    # fps = 1 / (cTime - pTime)
-    # pTime = cTime
-    # cv2.putText(img, str(int(fps)), (50, 100), cv2.FONT_HERSHEY_PLAIN, 5,
-    #             (255, 0, 0), 5)
+    print(count)
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
