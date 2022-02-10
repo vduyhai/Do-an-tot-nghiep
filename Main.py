@@ -3,6 +3,7 @@ import numpy as np
 import time
 import PoseModule as pm
 import serial
+from cvzone.SerialModule import SerialObject
 
 cap = cv2.VideoCapture(0)
 
