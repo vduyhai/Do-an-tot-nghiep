@@ -15,8 +15,6 @@ def countdown(t):
         cv.putText(img, str(t), (100, 200), 1, 1, (255, 0, 0), 1)
         t -= 1
 
-
-
     print('Fire in the hole!!')
 
 

@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="images">
-    <file>C:/Users/PC/Downloads/Free Vector _ Vector cartoon background of gym with big window.png</file>
+    <file>Images/coffee.jfif</file>
+    <file>Images/milktea.png</file>
+    <file>Images/tea.png</file>
+    <file>gym_green.png</file>
+    <file>coffee.png</file>
   </qresource>
 </RCC>
