@@ -40,7 +40,7 @@ def squat1UI():
 
         qFrame = QtGui.QImage(frame.data, w, h, step, QtGui.QImage.Format_RGB888)
 
-        ui.image_label.setPiximap(QtGui.QPixmap.fromImage(qFrame))
+        ui.label.setPiximap(QtGui.QPixmap.fromImage(qFrame))
 
         MainWindow.show()
         cv.waitKey(1)
