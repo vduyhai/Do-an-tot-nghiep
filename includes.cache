@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files\\WindowsApps\\ArduinoLLC.ArduinoIDE_1.8.57.0_x86__mdqgnx93n4wtt\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files\\WindowsApps\\ArduinoLLC.ArduinoIDE_1.8.57.0_x86__mdqgnx93n4wtt\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "D:\\Do-an-tot-nghiep\\sketch\\test.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
