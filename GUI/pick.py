@@ -14,30 +14,25 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(640, 480)
-
+        MainWindow.resize(1024, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-
         self.widget = QtWidgets.QWidget(self.centralwidget)
-        self.widget.setGeometry(QtCore.QRect(-1, -1, 640, 480))
+        self.widget.setGeometry(QtCore.QRect(0, 0, 1024, 600))
         self.widget.setStyleSheet("background-color: rgb(255, 217, 0);")
         self.widget.setObjectName("widget")
-
         self.cancel = QtWidgets.QPushButton(self.widget)
-        self.cancel.setGeometry(QtCore.QRect(230, 380, 161, 51))
+        self.cancel.setGeometry(QtCore.QRect(440, 410, 161, 51))
         self.cancel.setStyleSheet("background-color: rgb(240, 0, 104);\n"
 "font: 87 18pt \"Arial Black\";\n"
 "color: rgb(255, 255, 255);\n"
 "border-radius: 10px;")
         self.cancel.setObjectName("cancel")
-
         self.pic1 = QtWidgets.QLabel(self.widget)
         self.pic1.setGeometry(QtCore.QRect(80, 80, 141, 161))
         self.pic1.setText("")
         self.pic1.setPixmap(QtGui.QPixmap("Images/coffeeCopy.png"))
         self.pic1.setObjectName("pic1")
-
         self.coffee = QtWidgets.QPushButton(self.widget)
         self.coffee.setGeometry(QtCore.QRect(70, 250, 161, 51))
         self.coffee.setStyleSheet("background-color: rgb(240, 0, 104);\n"
