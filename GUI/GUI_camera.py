@@ -25,6 +25,7 @@ class MainWindow(QMainWindow):
     def count(self, count):
         self.uic.Continue.hide()
         self.uic.counting.setText(str(count))
+        print(count)
         if count == 8:
             self.uic.Continue.show()
 
