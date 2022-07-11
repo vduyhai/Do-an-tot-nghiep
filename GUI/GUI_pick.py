@@ -1,12 +1,12 @@
 import sys
 
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from pick import Ui_MainWindow
+from pick import Ui_MainWindow1
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.uic = Ui_MainWindow()
+        self.uic = Ui_MainWindow1()
         self.uic.setupUi(self)
 
 if __name__ == "__main__":
