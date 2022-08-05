@@ -4,7 +4,7 @@ import numpy as np
 from PyQt5 import QtGui
 from PyQt5.QtCore import QThread, pyqtSignal, Qt
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow, QAbstractButton
 from camera import Ui_MainWindow2
 import PoseModule as pm
 
@@ -14,18 +14,26 @@ class MainWindow(QMainWindow):
         self.uic = Ui_MainWindow2()
         self.uic.setupUi(self)
         self.uic.progressBar.setValue(0)
+        self.uic.Continue.clicked.connect(self.start_capture_video)
+        self.uic.cancel.clicked.connect(self.stop_capture_video)
 
         self.thread = {}
+    def start_capture_video(self):
         self.thread[1] = capture_video(index=1)
         self.thread[1].start()
         self.thread[1].signal.connect(self.show_wedcam)
         self.thread[1].counting.connect(self.count)
         self.thread[1].progress_bar.connect(self.uic.progressBar.setValue)
 
+    def closeEvent(self, event):
+        self.stop_capture_video()
+
+    def stop_capture_video(self):
+        self.thread[1].stop()
+
     def count(self, count):
         self.uic.Continue.hide()
         self.uic.counting.setText(str(count))
-        print(count)
         if count == 8:
             self.uic.Continue.show()
 
@@ -78,8 +86,21 @@ class capture_video(QThread):
                             dir = 0
                     self.counting.emit(int(nos))
                     self.progress_bar.emit(int(per))
-                self.signal.emit(cv_img)
+                    # print(nos)
 
+                    # cv2.rectangle(img, (1100, 100), (1175, 650), color, 3)
+                    # cv2.rectangle(img, (1100, int(bar)), (1175, 650), color, cv2.FILLED)
+                    # cv2.putText(img, f'{int(per)} %', (1100, 75), cv2.FONT_HERSHEY_PLAIN, 4,
+                    #             color, 4)
+                    # cv2.putText(img, str(int(count)), (45, 670), cv2.FONT_HERSHEY_PLAIN, 15,
+                    #             (255, 0, 0), 25)
+                #
+                # cv2.imshow("Image", img_)
+                # cv2.waitKey(1)
+                self.signal.emit(cv_img)
+    def stop(self):
+        print("stop threading", self.index)
+        self.terminate()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -11,6 +11,7 @@ from camera import Ui_MainWindow2
 import cv2
 import PoseModule as pm
 
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -19,8 +20,6 @@ class MainWindow(QMainWindow):
         self.uic.start.clicked.connect(self.show_pick)
 
     def show_pick(self):
-        # self.hide()
-        self.pick = QMainWindow()
         self.uic1 = Ui_MainWindow1()
         self.uic1.setupUi(self)
         self.uic1.cancel.clicked.connect(self.show_home)
@@ -28,29 +27,42 @@ class MainWindow(QMainWindow):
         # self.pick.show()
 
     def show_home(self):
-        self.show()
+        # self.stop_capture_video()
+        self.uic = Ui_MainWindow()
+        self.uic.setupUi(self)
+        self.uic.start.clicked.connect(self.show_pick)
+
+    def show_home1(self):
+        self.stop_capture_video()
+        self.uic = Ui_MainWindow()
+        self.uic.setupUi(self)
+        self.uic.start.clicked.connect(self.show_pick)
 
     def show_camera(self):
-        self.camera = QMainWindow()
         self.uic2 = Ui_MainWindow2()
         self.uic2.setupUi(self)
-        self.uic2.canel.clicked.connect(self.show_home)
-
         self.uic2.progressBar.setValue(0)
-
         self.thread = {}
         self.thread[1] = capture_video(index=1)
         self.thread[1].start()
         self.thread[1].signal.connect(self.show_wedcam)
         self.thread[1].counting.connect(self.count)
         self.thread[1].progress_bar.connect(self.uic2.progressBar.setValue)
+        self.uic2.cancel.clicked.connect(self.show_home1)
+
+    # def closeEvent(self, event):
+    #     self.stop_capture_video()
+
+    def stop_capture_video(self):
+        self.thread[1].stop()
+        # self.show_home()
 
     def count(self, count):
-        self.uic2.Continue.hide()
+        # self.uic2.Continue.hide()
         self.uic2.counting.setText(str(count))
         # print(count)
-        if count == 8:
-            self.uic2.Continue.show()
+        # if count == 8:
+        #     self.uic2.Continue.show()
 
     def show_wedcam(self, cv_img):
         """Updates the image_label with a new opencv image"""
@@ -73,6 +85,7 @@ class capture_video(QThread):
 
     def __init__(self, index):
         self.index = index
+        self.threadactive = True
         print("start threading", self.index)
         super(capture_video, self).__init__()
 
@@ -101,6 +114,12 @@ class capture_video(QThread):
                     self.counting.emit(int(nos))
                     self.progress_bar.emit(int(per))
                 self.signal.emit(cv_img)
+
+    def stop(self):
+        print("stop threading", self.index)
+        self.threadactive = False
+        self.wait(3)
+        self.terminate()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

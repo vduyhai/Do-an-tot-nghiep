@@ -31,11 +31,11 @@ class Ui_MainWindow2(object):
         self.Continue = QtWidgets.QPushButton(self.centralwidget)
         self.Continue.setGeometry(QtCore.QRect(770, 330, 151, 51))
         self.Continue.setObjectName("Continue")
-        self.canel = QtWidgets.QPushButton(self.centralwidget)
-        self.canel.setGeometry(QtCore.QRect(790, 450, 93, 28))
-        self.canel.setObjectName("canel")
+        self.cancel = QtWidgets.QPushButton(self.centralwidget)
+        self.cancel.setGeometry(QtCore.QRect(790, 450, 93, 28))
+        self.cancel.setObjectName("cancel")
         self.camera = QtWidgets.QLabel(self.centralwidget)
-        self.camera.setGeometry(QtCore.QRect(120, 70, 251, 461))
+        self.camera.setGeometry(QtCore.QRect(120, 70, 280, 480))
         self.camera.setFrameShape(QtWidgets.QFrame.Box)
         self.camera.setText("")
         self.camera.setObjectName("camera")
@@ -48,14 +48,14 @@ class Ui_MainWindow2(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.Continue.setText(_translate("MainWindow", "CONTINUE"))
-        self.canel.setText(_translate("MainWindow", "CANCEL"))
+        self.cancel.setText(_translate("MainWindow", "CANCEL"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow2()
+    ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())

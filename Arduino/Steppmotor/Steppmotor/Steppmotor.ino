@@ -1,5 +1,5 @@
-const int DIR = 9;
-const int STP = 8;
+const int DIR = 6;
+const int STP = 7;
 const int stepsPerRevolution = 200;
 void setup() {
   pinMode(DIR, OUTPUT);
@@ -14,8 +14,8 @@ void loop() {
   {
    digitalWrite(STP, HIGH);
    Serial.println("OK");
-   delay(1000);
+   delayMicroseconds(100);
    digitalWrite(STP, LOW);
-   delay(1000);
+   delayMicroseconds(100);
    }
 }

@@ -1,22 +1,13 @@
-# 1 "D:\\Do-an-tot-nghiep\\Arduino\\Steppmotor\\Steppmotor\\Steppmotor.ino"
-const int DIR = 9;
-const int STP = 8;
-const int stepsPerRevolution = 200;
+# 1 "D:\\Do-an-tot-nghiep\\Arduino\\Sensor\\sensor\\sensor.ino"
+const int sensor = 5;
+
 void setup() {
-  pinMode(DIR, 0x1);
-  pinMode(STP, 0x1);
+  pinMode(sensor, 0x0);
   Serial.begin(9600);
 }
 
 void loop() {
-  digitalWrite(DIR, 0x1);
-
-  for(int x = 0; x <stepsPerRevolution; x++)
-  {
-   digitalWrite(STP, 0x1);
-   Serial.println("OK");
-   delay(1000);
-   digitalWrite(STP, 0x0);
-   delay(1000);
-   }
+  int x = digitalRead(sensor);
+  Serial.println(x);
+  delay(100);
 }
