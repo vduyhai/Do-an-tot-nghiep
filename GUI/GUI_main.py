@@ -41,7 +41,7 @@ class MainWindow(QMainWindow):
         self.uic2.progressBar.setValue(0)
         self.uic2.Continue.hide()
         self.uic2.cancel.clicked.connect(self.stop_capture_video)
-        self.uic2.Continue.clicked.connect(self.show_bye)
+        self.uic2.Continue.clicked.connect(self.stop_capture_video)
 
         self.Work = capture_video()
         self.Work.start()
@@ -61,17 +61,17 @@ class MainWindow(QMainWindow):
         self.uic2.camera.setPixmap(QPixmap.fromImage(Image))
 
     def show_bye(self):
+        print('show bye')
         self.uic3 = Ui_MainWindow3()
         self.uic3.setupUi(self)
         self.my_qtimer = QTimer(self)
         self.my_qtimer.timeout.connect(self.show_home)
         self.my_qtimer.start(3000)
         self.my_qtimer.timeout.connect(self.my_qtimer.disconnect)
-        print('x')
 
     def stop_capture_video(self):
         self.Work.stop()
-        time.sleep(1)
+        time.sleep(0.1)
         # self.thread[1].stop()
         self.show_bye()
 
