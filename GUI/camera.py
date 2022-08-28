@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\camera.ui'
+# Form implementation generated from reading ui file 'camera.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -29,7 +29,7 @@ class Ui_MainWindow2(object):
         self.counting.setText("")
         self.counting.setObjectName("counting")
         self.Continue = QtWidgets.QPushButton(self.centralwidget)
-        self.Continue.setGeometry(QtCore.QRect(770, 330, 151, 51))
+        self.Continue.setGeometry(QtCore.QRect(770, 380, 151, 51))
         self.Continue.setObjectName("Continue")
         self.cancel = QtWidgets.QPushButton(self.centralwidget)
         self.cancel.setGeometry(QtCore.QRect(790, 450, 93, 28))
@@ -39,6 +39,9 @@ class Ui_MainWindow2(object):
         self.camera.setFrameShape(QtWidgets.QFrame.Box)
         self.camera.setText("")
         self.camera.setObjectName("camera")
+        self.start = QtWidgets.QPushButton(self.centralwidget)
+        self.start.setGeometry(QtCore.QRect(800, 320, 93, 28))
+        self.start.setObjectName("start")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -49,6 +52,7 @@ class Ui_MainWindow2(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.Continue.setText(_translate("MainWindow", "CONTINUE"))
         self.cancel.setText(_translate("MainWindow", "CANCEL"))
+        self.start.setText(_translate("MainWindow", "start"))
 
 
 if __name__ == "__main__":

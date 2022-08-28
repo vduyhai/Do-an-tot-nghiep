@@ -9,12 +9,17 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
+import cv2
+import PoseModule as pm
+import numpy as np
 
-
-class Ui_MainWindow1(object):
+class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
+        MainWindow.setMinimumSize(QtCore.QSize(800, 0))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
@@ -24,24 +29,76 @@ class Ui_MainWindow1(object):
         self.label.setTextFormat(QtCore.Qt.PlainText)
         self.label.setObjectName("label")
         self.cancel = QtWidgets.QPushButton(self.centralwidget)
-        self.cancel.setGeometry(QtCore.QRect(520, 250, 93, 28))
+        self.cancel.setGeometry(QtCore.QRect(510, 410, 93, 28))
         self.cancel.setObjectName("cancel")
+        self.start = QtWidgets.QPushButton(self.centralwidget)
+        self.start.setGeometry(QtCore.QRect(510, 300, 93, 28))
+        self.start.setObjectName("start")
         MainWindow.setCentralWidget(self.centralwidget)
+
+        self.start.clicked.connect(self.start_capture)
+        self.cancel.clicked.connect(self.stop_capture)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def start_capture(self):
+        self.Work = Work()
+        self.Work.start()
+        self.Work.Imageupd.connect(self.Imageupd_slot)
+
+    def Imageupd_slot(self, Image):
+        self.label.setPixmap(QPixmap.fromImage(Image))
+
+    def stop_capture(self):
+        self.label.clear()
+        self.Work.stop()
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.cancel.setText(_translate("MainWindow", "cancel"))
+        self.start.setText(_translate("MainWindow", "start"))
 
+class Work(QThread):
+    Imageupd = pyqtSignal(QImage)
+    def run(self):
+        self.hilo_corriendo = True
+        cap = cv2.VideoCapture(0) #'squat1.mp4'
+        detector = pm.poseDetector()
+        nos = 0
+        dir = 0
+        while self.hilo_corriendo:
+            ret, cv_img = cap.read()
+            if ret:
+                cv_img = detector.findPose(cv_img, False)
+                lmList = detector.findPosition(cv_img, False)
+                if len(lmList) != 0:
+                    angle = detector.findAngle(cv_img, 23, 25, 27)
+                    per = np.interp(angle, (182, 270), (0, 100))
+                    if per == 100:
+                        if dir == 0:
+                            nos += 0.5
+                            dir = 1
+                    if per == 0:
+                        if dir == 1:
+                            nos += 0.5
+                            dir = 0
+
+                Image = cv2.cvtColor(cv_img, cv2.COLOR_BGR2RGB)
+                flip = cv2.flip(Image, 1)
+                convertir_QT = QImage(flip.data, flip.shape[1], flip.shape[0], QImage.Format_RGB888)
+                pic = convertir_QT.scaled(320, 240, Qt.KeepAspectRatio)
+                self.Imageupd.emit(pic)
+    def stop(self):
+        self.hilo_corriendo = False
+        self.quit()
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow1()
+    ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())

@@ -1,4 +1,4 @@
-const int sensor = 5*;
+const int sensor = 3;
 
 void setup() {
   pinMode(sensor, INPUT);
@@ -8,5 +8,5 @@ void setup() {
 void loop() {
   int x = digitalRead(sensor);
   Serial.println(x);
-  delay(100);
+  delay(10);
 }
