@@ -1,6 +1,6 @@
-#define in1 5
-#define in2 4
-#define enA 3
+#define in1 8
+#define in2 9
+#define enA 7
 
 #define MAX_SPEED 255 //từ 0-255
 #define MIN_SPEED 0

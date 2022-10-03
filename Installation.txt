@@ -1,0 +1,59 @@
+1. Install gedit
+sudo apt install gedit
+
+2. Install pyenv
+sudo apt install -y make build-essential libssl-dev zlib1g-dev \
+libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl \
+git
+
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
+
+# Close and open a new terminal 
+pyenv install 3.7.14
+pyenv global 3.7.14
+
+3. Install PyQt5
+sudo gedit /etc/apt/sources.list
+
+sudo apt update
+sudo apt full-upgrade
+sudo reboot
+sudo rpi-update
+sudo reboot
+
+sudo apt install -y qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+sudo apt-get build-dep qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
+sudo apt-get build-dep libqt5webengine-data
+sudo apt install libqt5webengine-data
+
+
+sudo apt-get install libboost-all-dev libudev-dev libinput-dev libts-dev libmtdev-dev libjpeg-dev libfontconfig1-dev 
+sudo apt-get install libssl-dev libdbus-1-dev libglib2.0-dev libxkbcommon-dev libegl1-mesa-dev libgbm-dev libgles2-mesa-dev mesa-common-dev
+sudo apt-get install libasound2-dev libpulse-dev gstreamer1.0-omx libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev  gstreamer1.0-alsa
+sudo apt-get install libvpx-dev libsrtp0-dev libsnappy-dev libnss3-dev
+sudo apt-get install "^libxcb.*"
+sudo apt-get install flex bison libxslt-dev ruby gperf libbz2-dev libcups2-dev libatkmm-1.6-dev libxi6 libxcomposite1
+sudo apt-get install libfreetype6-dev libicu-dev libsqlite3-dev libxslt1-dev libavcodec-dev libavformat-dev libswscale-dev 
+sudo apt-get install libgstreamer1.0-dev gstreamer1.0-tools libraspberrypi-dev libx11-dev libglib2.0-dev 
+sudo apt-get install freetds-dev libsqlite0-dev libpq-dev libiodbc2-dev firebird-dev libjpeg9-dev libgst-dev libxext-dev libxcb1 libxcb1-dev libx11-xcb1 
+sudo apt-get install libx11-xcb-dev libxcb-keysyms1 libxcb-keysyms1-dev libxcb-image0 libxcb-image0-dev libxcb-shm0 libxcb-shm0-dev libxcb-icccm4 libxcb-icccm4-dev 
+sudo apt-get install libxcb-sync1 libxcb-sync-dev libxcb-render-util0 libxcb-render-util0-dev libxcb-xfixes0-dev libxrender-dev libxcb-shape0-dev libxcb-randr0-dev 
+sudo apt-get install libxcb-glx0-dev libxi-dev libdrm-dev libssl-dev libxcb-xinerama0 libxcb-xinerama0-dev
+sudo apt-get install libatspi-dev libssl-dev libxcursor-dev libxcomposite-dev libxdamage-dev libfontconfig1-dev 
+sudo apt-get install libxss-dev libxtst-dev libpci-dev libcap-dev libsrtp0-dev libxrandr-dev libnss3-dev libdirectfb-dev libaudio-dev
+
+sudo mkdir /usr/local/qt5pi
+sudo chown pi:pi /usr/local/qt5pi
+
+export QT_QPA_PLATFOMRTHEME=qt5ct
+export DISPLAY=:0.0
+export XAUTHORITY=/home/pi/.Xauthrity
+export XDG_SESSION_TYPE=x11
+
+# Close and open a new terminal 
+pip show PyQt5

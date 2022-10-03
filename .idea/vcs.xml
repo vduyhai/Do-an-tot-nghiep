@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ATM-Interface" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Arduino/Arduino-Shield-Template" vcs="Git" />
   </component>
 </project>
