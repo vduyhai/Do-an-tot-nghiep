@@ -1,9 +1,5 @@
 <RCC>
   <qresource prefix="images">
-    <file>Images/coffee.jfif</file>
-    <file>Images/milktea.png</file>
-    <file>Images/tea.png</file>
-    <file>gym_green.png</file>
-    <file>coffee.png</file>
+    <file>Images/coffee.png</file>
   </qresource>
 </RCC>

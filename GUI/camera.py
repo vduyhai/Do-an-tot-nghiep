@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'camera.ui'
+# Form implementation generated from reading ui file '.\camera.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -15,33 +15,88 @@ class Ui_MainWindow2(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1024, 600)
+        MainWindow.setStyleSheet("background-color: rgb(0, 95, 55);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
-        self.progressBar.setGeometry(QtCore.QRect(510, 70, 118, 461))
+        self.progressBar.setGeometry(QtCore.QRect(450, 130, 110, 430))
         self.progressBar.setProperty("value", 24)
         self.progressBar.setTextVisible(False)
         self.progressBar.setOrientation(QtCore.Qt.Vertical)
         self.progressBar.setObjectName("progressBar")
         self.counting = QtWidgets.QLabel(self.centralwidget)
-        self.counting.setGeometry(QtCore.QRect(770, 110, 151, 161))
+        self.counting.setGeometry(QtCore.QRect(610, 130, 300, 300))
+        self.counting.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"font: 150pt \"MS Shell Dlg 2\";\n"
+"")
         self.counting.setFrameShape(QtWidgets.QFrame.Box)
         self.counting.setText("")
+        self.counting.setAlignment(QtCore.Qt.AlignCenter)
         self.counting.setObjectName("counting")
         self.Continue = QtWidgets.QPushButton(self.centralwidget)
-        self.Continue.setGeometry(QtCore.QRect(770, 380, 151, 51))
+        self.Continue.setGeometry(QtCore.QRect(610, 480, 300, 80))
+        self.Continue.setStyleSheet("QPushButton{\n"
+"font: 25pt \"MS Shell Dlg 2\";\n"
+"color: rgb(255,255,255);\n"
+"border-radius: 30px;\n"
+"background-color: rgb(0, 170, 0);\n"
+"}\n"
+"QPushButton::pressed{\n"
+"background-color: rgb(115, 230, 0);\n"
+"}\n"
+"")
         self.Continue.setObjectName("Continue")
         self.cancel = QtWidgets.QPushButton(self.centralwidget)
-        self.cancel.setGeometry(QtCore.QRect(790, 450, 93, 28))
+        self.cancel.setGeometry(QtCore.QRect(934, 20, 60, 60))
+        font = QtGui.QFont()
+        font.setFamily("Wingdings 2")
+        font.setPointSize(30)
+        self.cancel.setFont(font)
+        self.cancel.setStyleSheet("QPushButton{\n"
+"font: 30pt \"Wingdings 2\";\n"
+"background-color: rgb(0, 95, 55);\n"
+"color: rgb(0, 170, 0);\n"
+"border-radius: 15px;\n"
+"}\n"
+"QPushButton::pressed{\n"
+"background-color: rgb(0, 95, 55);\n"
+"color:rgb(115, 230, 0);\n"
+"}")
         self.cancel.setObjectName("cancel")
         self.camera = QtWidgets.QLabel(self.centralwidget)
-        self.camera.setGeometry(QtCore.QRect(120, 70, 280, 480))
+        self.camera.setGeometry(QtCore.QRect(120, 130, 287, 430))
         self.camera.setFrameShape(QtWidgets.QFrame.Box)
         self.camera.setText("")
         self.camera.setObjectName("camera")
-        self.start = QtWidgets.QPushButton(self.centralwidget)
-        self.start.setGeometry(QtCore.QRect(800, 320, 93, 28))
-        self.start.setObjectName("start")
+        self.cancel_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.cancel_2.setGeometry(QtCore.QRect(20, 20, 60, 60))
+        font = QtGui.QFont()
+        font.setFamily("Wingdings")
+        font.setPointSize(30)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.cancel_2.setFont(font)
+        self.cancel_2.setStyleSheet("QPushButton{\n"
+"font: 30pt \"Wingdings\";\n"
+"background-color: rgb(0, 95, 55);\n"
+"color: rgb(0, 170, 0);\n"
+"border-radius: 15px;\n"
+"}\n"
+"QPushButton::pressed{\n"
+"background-color: rgb(0, 95, 55);\n"
+"color:rgb(115, 230, 0);\n"
+"}")
+        self.cancel_2.setObjectName("cancel_2")
+        self.order = QtWidgets.QLabel(self.centralwidget)
+        self.order.setEnabled(True)
+        self.order.setGeometry(QtCore.QRect(212, 30, 600, 65))
+        self.order.setStyleSheet("background-color: rgb(155, 230, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 30pt \"MS Shell Dlg 2\";\n"
+"border-radius: 20px;")
+        self.order.setAlignment(QtCore.Qt.AlignCenter)
+        self.order.setObjectName("order")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -50,9 +105,10 @@ class Ui_MainWindow2(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.Continue.setText(_translate("MainWindow", "CONTINUE"))
-        self.cancel.setText(_translate("MainWindow", "CANCEL"))
-        self.start.setText(_translate("MainWindow", "start"))
+        self.Continue.setText(_translate("MainWindow", "NEXT"))
+        self.cancel.setText(_translate("MainWindow", "V"))
+        self.cancel_2.setText(_translate("MainWindow", "Û"))
+        self.order.setText(_translate("MainWindow", "PLEASE DO 20 SQUATS"))
 
 
 if __name__ == "__main__":

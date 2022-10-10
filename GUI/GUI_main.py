@@ -4,13 +4,25 @@ from PyQt5 import QtGui
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from serial import Serial
 from home import Ui_MainWindow
-from pick import Ui_MainWindow1
+from pick_test import Ui_MainWindow1
 from camera import Ui_MainWindow2
 from bye import Ui_MainWindow3
 import cv2
 import PoseModule as pm
 import time
+
+# <name>.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+# <name>.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+
+ser = Serial('COM1')
+cup = []
+drinks = []
+
+class communicate(QObject):
+    signal1 = pyqtSignal(str)
+    signal2 = pyqtSignal(str)
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -23,9 +35,99 @@ class MainWindow(QMainWindow):
         print('show pick')
         self.uic1 = Ui_MainWindow1()
         self.uic1.setupUi(self)
-        self.uic1.cancel.clicked.connect(self.show_home)
-        self.uic1.coffee.clicked.connect(self.show_camera)
-        # self.pick.show()
+        self.c = communicate()
+
+        self.uic1.back.clicked.connect(self.show_home)
+        self.uic1.personal.clicked.connect(self.changePersonalCupBtnColor)
+        self.uic1.plastic.clicked.connect(self.changePlasticCupBtnColor)
+        self.uic1.coffee.clicked.connect(self.changeCoffeeBtnColor)
+        self.uic1.tea.clicked.connect(self.changeTeaBtnColor)
+        self.uic1.next.clicked.connect(self.show_camera)
+
+        self.c.signal1.connect(self.printSignal1)
+        self.c.signal2.connect(self.printSignal2)
+
+        # self.uic1.next.clicked.connect(self.send)
+
+    def changePersonalCupBtnColor(self):
+        self.uic1.personal.setStyleSheet("QPushButton{\n"
+                                        "font: 18pt \"MS Shell Dlg 2\";\n"
+                                        "color: rgb(255, 255, 255);\n"
+                                        "background-color: rgb(115, 230, 0);\n"
+                                        "border-radius: 25px;\n"
+                                        "}\n")
+
+        self.uic1.plastic.setStyleSheet("QPushButton{\n"
+                                       "font: 18pt \"MS Shell Dlg 2\";\n"
+                                       "color: rgb(255, 255, 255);\n"
+                                       "background-color: rgb(0, 170, 0);\n"
+                                       "border-radius: 25px;\n"
+                                       "}\n")
+
+        self.c.signal1.emit('personal')
+
+    def changePlasticCupBtnColor(self):
+        self.uic1.plastic.setStyleSheet("QPushButton{\n"
+                                       "font: 18pt \"MS Shell Dlg 2\";\n"
+                                       "color: rgb(255, 255, 255);\n"
+                                       "background-color: rgb(115, 230, 0);\n"
+                                       "border-radius: 25px;\n"
+                                       "}\n")
+        self.uic1.personal.setStyleSheet("QPushButton{\n"
+                                        "font: 18pt \"MS Shell Dlg 2\";\n"
+                                        "color: rgb(255, 255, 255);\n"
+                                        "background-color: rgb(0, 170, 0);\n"
+                                        "border-radius: 25px;\n"
+                                        "}\n")
+
+        self.c.signal1.emit('plastic')
+
+    def changeCoffeeBtnColor(self):
+        self.uic1.coffee.setStyleSheet("QPushButton{\n"
+                                      "font: 18pt \"MS Shell Dlg 2\";\n"
+                                      "color: rgb(255, 255, 255);\n"
+                                      "background-color: rgb(115, 230, 0);\n"
+                                      "border-radius: 25px;\n"
+                                      "}\n")
+        self.uic1.tea.setStyleSheet("QPushButton{\n"
+                                   "font: 18pt \"MS Shell Dlg 2\";\n"
+                                   "color: rgb(255, 255, 255);\n"
+                                   "background-color: rgb(0, 170, 0);\n"
+                                   "border-radius: 25px;\n"
+                                   "}\n")
+        self.c.signal2.emit('coffee')
+
+    def changeTeaBtnColor(self):
+        self.uic1.tea.setStyleSheet("QPushButton{\n"
+                                   "font: 18pt \"MS Shell Dlg 2\";\n"
+                                   "color: rgb(255, 255, 255);\n"
+                                   "background-color: rgb(115, 230, 0);\n"
+                                   "border-radius: 25px;\n"
+                                   "}\n")
+        self.uic1.coffee.setStyleSheet("QPushButton{\n"
+                                      "font: 18pt \"MS Shell Dlg 2\";\n"
+                                      "color: rgb(255, 255, 255);\n"
+                                      "background-color: rgb(0, 170, 0);\n"
+                                      "border-radius: 25px;\n"
+                                      "}\n")
+        self.c.signal2.emit('tea')
+
+    def printSignal1(self, x):
+        print(x)
+        cup.append(x)
+        if len(cup) and len(drinks) >= 1:
+            self.uic1.next.setEnabled(True)
+
+    def printSignal2(self, x):
+        print(x)
+        drinks.append(x)
+        if len(cup) and len(drinks) >= 1:
+            self.uic1.next.setEnabled(True)
+
+    def send(self):
+        print(cup[-1])
+        print(drinks[-1])
+        ser.write(bytes(cup[-1] + "_" + drinks[-1], 'utf8'))
 
     def show_home(self):
         print('show home')
@@ -34,7 +136,7 @@ class MainWindow(QMainWindow):
         self.uic.start.clicked.connect(self.show_pick)
 
     def show_camera(self):
-        print('show camera')
+        print('show camera ')
         self.uic2 = Ui_MainWindow2()
         self.uic2.setupUi(self)
         self.thread = {}
@@ -42,6 +144,9 @@ class MainWindow(QMainWindow):
         self.uic2.Continue.hide()
         self.uic2.cancel.clicked.connect(self.stop_capture_video)
         self.uic2.Continue.clicked.connect(self.stop_capture_video)
+        self.uic2.Continue.clicked.connect(self.send)
+
+        # self.uic2.cancel_2.clicked.connect(self.show_pick)
 
         self.Work = capture_video()
         self.Work.start()
@@ -52,8 +157,8 @@ class MainWindow(QMainWindow):
     def count(self, count):
         self.uic2.counting.setText(str(count))
         # print(count)
-        # if count == 3:
-        self.uic2.Continue.show()
+        if count == 3:
+            self.uic2.Continue.show()
 
     def show_webcam(self, Image):
         """Updates the image_label with a new opencv image"""
@@ -66,7 +171,7 @@ class MainWindow(QMainWindow):
         self.uic3.setupUi(self)
         self.my_qtimer = QTimer(self)
         self.my_qtimer.timeout.connect(self.show_home)
-        self.my_qtimer.start(3000)
+        self.my_qtimer.start(2500)
         self.my_qtimer.timeout.connect(self.my_qtimer.disconnect)
 
     def stop_capture_video(self):

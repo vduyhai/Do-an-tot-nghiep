@@ -14,23 +14,24 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(21, 46, 234);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="welcome_label">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 95, 55);</string>
+   </property>
+   <widget class="QLabel" name="welcome">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1024</width>
-      <height>350</height>
+      <x>302</x>
+      <y>170</y>
+      <width>420</width>
+      <height>100</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 48pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(21, 46, 234);
-color: rgb(255, 255, 255);
-</string>
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>WELCOME</string>
@@ -43,7 +44,7 @@ color: rgb(255, 255, 255);
     <property name="geometry">
      <rect>
       <x>362</x>
-      <y>370</y>
+      <y>420</y>
       <width>300</width>
       <height>80</height>
      </rect>
@@ -53,11 +54,10 @@ color: rgb(255, 255, 255);
 font: 25pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255,255,255);
 border-radius: 30px;
-background-color: rgb(101, 198, 251);
+background-color: rgb(0, 170, 0);
 }
-
-QPushButton::hover{
-background-color: rgb(193, 231, 255);
+QPushButton::pressed{
+background-color: rgb(115, 230, 0);
 }
 </string>
     </property>
@@ -65,6 +65,8 @@ background-color: rgb(193, 231, 255);
      <string>START</string>
     </property>
    </widget>
+   <zorder>start</zorder>
+   <zorder>welcome</zorder>
   </widget>
  </widget>
  <resources/>

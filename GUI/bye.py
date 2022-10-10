@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'bye.ui'
+# Form implementation generated from reading ui file '.\bye.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -15,11 +15,16 @@ class Ui_MainWindow3(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1024, 600)
+        MainWindow.setStyleSheet("background-color: rgb(0, 95, 55);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(300, 210, 451, 101))
-        self.label.setStyleSheet("")
+        self.label.setGeometry(QtCore.QRect(212, 250, 600, 100))
+        self.label.setStyleSheet("color: rgb(255, 255, 255);\n"
+"background-color: rgb(155, 230, 0);\n"
+"font: 36pt \"MS Shell Dlg 2\";\n"
+"border-radius: 25px;")
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         MainWindow.setCentralWidget(self.centralwidget)
 

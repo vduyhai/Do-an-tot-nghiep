@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'home.ui'
+# Form implementation generated from reading ui file '.\home.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -15,16 +15,31 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1024, 600)
+        MainWindow.setStyleSheet("")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(0, 95, 55);")
         self.centralwidget.setObjectName("centralwidget")
-        self.welcome_label = QtWidgets.QLabel(self.centralwidget)
-        self.welcome_label.setGeometry(QtCore.QRect(350, 150, 281, 121))
-        self.welcome_label.setStyleSheet("font: 36pt \"MS Shell Dlg 2\";\n"
-"")
-        self.welcome_label.setObjectName("welcome_label")
+        self.welcome = QtWidgets.QLabel(self.centralwidget)
+        self.welcome.setGeometry(QtCore.QRect(302, 170, 420, 100))
+        self.welcome.setStyleSheet("font: 48pt \"MS Shell Dlg 2\";\n"
+"color: rgb(255, 255, 255);")
+        self.welcome.setAlignment(QtCore.Qt.AlignCenter)
+        self.welcome.setObjectName("welcome")
         self.start = QtWidgets.QPushButton(self.centralwidget)
-        self.start.setGeometry(QtCore.QRect(440, 420, 93, 28))
+        self.start.setGeometry(QtCore.QRect(362, 420, 300, 80))
+        self.start.setStyleSheet("QPushButton{\n"
+"font: 25pt \"MS Shell Dlg 2\";\n"
+"color: rgb(255,255,255);\n"
+"border-radius: 30px;\n"
+"background-color: rgb(0, 170, 0);\n"
+"}\n"
+"QPushButton::pressed{\n"
+"background-color: rgb(115, 230, 0);\n"
+"}\n"
+"")
         self.start.setObjectName("start")
+        self.start.raise_()
+        self.welcome.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -33,7 +48,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.welcome_label.setText(_translate("MainWindow", "WELCOME"))
+        self.welcome.setText(_translate("MainWindow", "WELCOME"))
         self.start.setText(_translate("MainWindow", "START"))
 
 

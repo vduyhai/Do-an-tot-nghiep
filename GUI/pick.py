@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'pick.ui'
+# Form implementation generated from reading ui file '.\pick.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -19,27 +19,53 @@ class Ui_MainWindow1(object):
         self.centralwidget.setObjectName("centralwidget")
         self.widget = QtWidgets.QWidget(self.centralwidget)
         self.widget.setGeometry(QtCore.QRect(0, 0, 1024, 600))
-        self.widget.setStyleSheet("background-color: rgb(255, 217, 0);")
+        self.widget.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.widget.setStyleSheet("background-color: rgb(0, 95, 55);")
         self.widget.setObjectName("widget")
         self.cancel = QtWidgets.QPushButton(self.widget)
-        self.cancel.setGeometry(QtCore.QRect(440, 410, 161, 51))
-        self.cancel.setStyleSheet("background-color: rgb(240, 0, 104);\n"
-"font: 87 18pt \"Arial Black\";\n"
-"color: rgb(255, 255, 255);\n"
-"border-radius: 10px;")
+        self.cancel.setGeometry(QtCore.QRect(30, 30, 61, 41))
+        font = QtGui.QFont()
+        font.setFamily("Wingdings")
+        font.setPointSize(30)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.cancel.setFont(font)
+        self.cancel.setStyleSheet("QPushButton{\n"
+"font: 30pt \"Wingdings\";\n"
+"background-color: rgb(0, 95, 55);\n"
+"color: rgb(0, 170, 0);\n"
+"border-radius: 15px;\n"
+"}\n"
+"QPushButton::pressed{\n"
+"background-color: rgb(0, 95, 55);\n"
+"color:rgb(115, 230, 0);\n"
+"}")
         self.cancel.setObjectName("cancel")
-        self.pic1 = QtWidgets.QLabel(self.widget)
-        self.pic1.setGeometry(QtCore.QRect(80, 80, 141, 161))
-        self.pic1.setText("")
-        self.pic1.setPixmap(QtGui.QPixmap("Images/coffeeCopy.png"))
-        self.pic1.setObjectName("pic1")
         self.coffee = QtWidgets.QPushButton(self.widget)
-        self.coffee.setGeometry(QtCore.QRect(70, 250, 161, 51))
-        self.coffee.setStyleSheet("background-color: rgb(240, 0, 104);\n"
-"font: 87 18pt \"Arial Black\";\n"
-"color: rgb(255, 255, 255);\n"
-"border-radius: 10px;")
+        self.coffee.setGeometry(QtCore.QRect(150, 100, 287, 450))
+        font = QtGui.QFont()
+        font.setKerning(True)
+        self.coffee.setFont(font)
+        self.coffee.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.coffee.setToolTipDuration(-4)
+        self.coffee.setStyleSheet("QPushButton{\n"
+"background-color: rgb(0, 95, 55);\n"
+"border-radius: 30px;\n"
+"}")
+        self.coffee.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(".\\Images/coffee.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.coffee.setIcon(icon)
+        self.coffee.setIconSize(QtCore.QSize(287, 450))
         self.coffee.setObjectName("coffee")
+        self.tea = QtWidgets.QPushButton(self.widget)
+        self.tea.setGeometry(QtCore.QRect(587, 100, 287, 450))
+        self.tea.setStyleSheet("background-color: rgb(0, 170, 0);\n"
+"border-radius: 30px;\n"
+"")
+        self.tea.setText("")
+        self.tea.setObjectName("tea")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -48,8 +74,7 @@ class Ui_MainWindow1(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.cancel.setText(_translate("MainWindow", "CANCEL"))
-        self.coffee.setText(_translate("MainWindow", "COFFEE"))
+        self.cancel.setText(_translate("MainWindow", "Û"))
 # import res_rc
 
 
