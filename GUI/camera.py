@@ -88,6 +88,7 @@ class Ui_MainWindow2(object):
 "color:rgb(115, 230, 0);\n"
 "}")
         self.cancel_2.setObjectName("cancel_2")
+        #self.cancel_2.hide()
         self.order = QtWidgets.QLabel(self.centralwidget)
         self.order.setEnabled(True)
         self.order.setGeometry(QtCore.QRect(212, 30, 600, 65))
@@ -106,8 +107,8 @@ class Ui_MainWindow2(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.Continue.setText(_translate("MainWindow", "NEXT"))
-        self.cancel.setText(_translate("MainWindow", "V"))
-        self.cancel_2.setText(_translate("MainWindow", "Û"))
+        self.cancel.setText(_translate("MainWindow", "❎"))
+        self.cancel_2.setText(_translate("MainWindow", "⇦"))
         self.order.setText(_translate("MainWindow", "PLEASE DO 20 SQUATS"))
 
 

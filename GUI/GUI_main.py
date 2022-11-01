@@ -12,11 +12,11 @@ from bye import Ui_MainWindow3
 import cv2
 import PoseModule as pm
 import time
-
+import sip
 # <name>.setWindowFlags(QtCore.Qt.FramelessWindowHint)
 # <name>.setAttribute(QtCore.Qt.WA_TranslucentBackground)
 
-ser = Serial('COM1')
+#ser = Serial('COM1')
 cup = []
 drinks = []
 
@@ -127,7 +127,7 @@ class MainWindow(QMainWindow):
     def send(self):
         print(cup[-1])
         print(drinks[-1])
-        ser.write(bytes(cup[-1] + "_" + drinks[-1], 'utf8'))
+        #ser.write(bytes(cup[-1] + "_" + drinks[-1], 'utf8'))
 
     def show_home(self):
         print('show home')
@@ -145,6 +145,7 @@ class MainWindow(QMainWindow):
         self.uic2.cancel.clicked.connect(self.stop_capture_video)
         self.uic2.Continue.clicked.connect(self.stop_capture_video)
         self.uic2.Continue.clicked.connect(self.send)
+        self.uic2.cancel_2.clicked.connect(self.stop_capture_video_back)
 
         # self.uic2.cancel_2.clicked.connect(self.show_pick)
 
@@ -155,15 +156,18 @@ class MainWindow(QMainWindow):
         self.Work.progress_bar.connect(self.uic2.progressBar.setValue)
 
     def count(self, count):
-        self.uic2.counting.setText(str(count))
+        if not sip.isdeleted(self.uic2.counting):
+            self.uic2.counting.setText(str(count))
         # print(count)
         if count == 3:
-            self.uic2.Continue.show()
+            if not sip.isdeleted(self.uic2.Continue):
+            	self.uic2.Continue.show()
 
     def show_webcam(self, Image):
         """Updates the image_label with a new opencv image"""
         # qt_img = self.convert_cv_qt(cv_img)
-        self.uic2.camera.setPixmap(QPixmap.fromImage(Image))
+        if not sip.isdeleted(self.uic2.camera):
+       		self.uic2.camera.setPixmap(QPixmap.fromImage(Image))
 
     def show_bye(self):
         print('show bye')
@@ -179,6 +183,12 @@ class MainWindow(QMainWindow):
         time.sleep(0.1)
         # self.thread[1].stop()
         self.show_bye()
+        
+    def stop_capture_video_back(self):
+        self.Work.stop()
+        time.sleep(0.1)
+# self.thread[1].stop()
+        self.show_pick()
 
 class capture_video(QThread):
     signal = pyqtSignal(QImage)

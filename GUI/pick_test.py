@@ -18,6 +18,7 @@ class Ui_MainWindow1(object):
         MainWindow.setStyleSheet("background-color: rgb(0, 95, 55);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+        
         self.back = QtWidgets.QPushButton(self.centralwidget)
         self.back.setGeometry(QtCore.QRect(20, 20, 60, 60))
         font = QtGui.QFont()
@@ -38,6 +39,8 @@ class Ui_MainWindow1(object):
 "color:rgb(115, 230, 0);\n"
 "}")
         self.back.setObjectName("back")
+        
+        
         self.cup = QtWidgets.QLineEdit(self.centralwidget)
         self.cup.setGeometry(QtCore.QRect(120, 150, 360, 50))
         self.cup.setStyleSheet("color: rgb(255, 255, 255);\n"
@@ -61,6 +64,7 @@ class Ui_MainWindow1(object):
 "}\n"
 "")
         self.personal.setObjectName("personal")
+        
         self.plastic = QtWidgets.QPushButton(self.centralwidget)
         self.plastic.setGeometry(QtCore.QRect(120, 350, 260, 60))
         self.plastic.setStyleSheet("QPushButton{\n"
@@ -84,7 +88,6 @@ class Ui_MainWindow1(object):
 "")
         self.drinks.setObjectName("drinks")
         self.coffee = QtWidgets.QPushButton(self.centralwidget)
-        self.coffee.setEnabled(False)
         self.coffee.setGeometry(QtCore.QRect(570, 260, 200, 60))
         self.coffee.setStyleSheet("QPushButton{\n"
 "font: 18pt \"MS Shell Dlg 2\";\n"
@@ -139,14 +142,14 @@ class Ui_MainWindow1(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.back.setText(_translate("MainWindow", "Û"))
+        self.back.setText(_translate("MainWindow", "⇦"))
         self.cup.setText(_translate("MainWindow", "CHOOSE TYPE OF CUP"))
         self.personal.setText(_translate("MainWindow", "PERSONAL CUP"))
         self.plastic.setText(_translate("MainWindow", "PLASTIC CUP"))
         self.drinks.setText(_translate("MainWindow", "CHOOSE DRINKS"))
         self.coffee.setText(_translate("MainWindow", "COFFEE"))
         self.tea.setText(_translate("MainWindow", "TEA"))
-        self.next.setText(_translate("MainWindow", "Ü"))
+        self.next.setText(_translate("MainWindow", "⇨"))
 
 
 if __name__ == "__main__":
