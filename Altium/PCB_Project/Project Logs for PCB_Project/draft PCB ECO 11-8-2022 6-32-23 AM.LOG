@@ -1,0 +1,10 @@
+Added Component: Designator=LM1(LM2596_Module)
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=LM1-2
+Added Pin To Net: NetName=GND Pin=LM1-3
+Added Pin To Net: NetName=+5 Pin=LM1-4
+Change Net Name : Old Net Name=+5 New Net Name=5V
+Added Pin To Net: NetName=12V Pin=J1-1
+Added Pin To Net: NetName=12V Pin=LM1-1
+Added Net: Name=12V
+Added Member To Class: ClassName=draft Member=Component LM1 LM2596

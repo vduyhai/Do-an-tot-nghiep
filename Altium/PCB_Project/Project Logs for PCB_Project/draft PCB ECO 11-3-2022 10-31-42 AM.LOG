@@ -1,0 +1,4 @@
+Added Component: Designator=Arduino?(Arduino UNO R3)
+Add component (AddParameter): Name = "Value"; Value = "Cau 1A"; VariantName = "[No Variations]"
+Added Class: Name=draft
+Added Room: Name=draft

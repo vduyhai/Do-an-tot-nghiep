@@ -1,0 +1,8 @@
+Added Component: Designator=JDC(DC-IN)
+Add component (AddParameter): Name = "Value"; Value = "Jac DC"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12 Pin=JDC-1
+Added Net: Name=+12
+Added Pin To Net: NetName=GND Pin=JDC-2
+Added Pin To Net: NetName=GND Pin=JDC-3
+Added Net: Name=GND
+Added Member To Class: ClassName=draft Member=Component JDC Jac DC
