@@ -1,12 +1,12 @@
-const int stepPin = 5; 
-const int dirPin = 2; 
-const int enPin = 8;
+const int stepPin = 13; 
+const int dirPin = 12; 
+const int enPin = 11;
 
 void setup() {
   pinMode(stepPin,OUTPUT); 
   pinMode(dirPin,OUTPUT);
   pinMode(enPin,OUTPUT);
-  digitalWrite(enPin,LOW);
+  digitalWrite(enPin,HIGH);
   
 }
 
