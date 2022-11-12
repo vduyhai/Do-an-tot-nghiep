@@ -1,5 +1,5 @@
-int sensor1 = 3;
-int sensor2 = 4;
+int sensor1 = 4;
+int sensor2 = 5;
 
 void setup() {
   pinMode(sensor1, INPUT);

@@ -1,0 +1,141 @@
+Removed Pin From Net: NetName=GND Pin=Arduino1-GND
+Removed Pin From Net: NetName=GND Pin=Arduino1-GND
+Removed Pin From Net: NetName=GND Pin=Arduino1-GND
+Removed Pin From Net: NetName=GND Pin=Arduino1-GND
+Removed Pin From Net: NetName=GND Pin=Arduino1-GND
+Removed Pin From Net: NetName=GND Pin=Arduino1-GND
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=LED GND-1
+Removed Pin From Net: NetName=GND Pin=LED GND-2
+Removed Pin From Net: NetName=GND Pin=LM1-3
+Removed Pin From Net: NetName=GND Pin=Pump Source-2
+Removed Pin From Net: NetName=GND Pin=Relay Source-2
+Removed Pin From Net: NetName=SENSOR1 Pin=Ss1-2
+Removed Pin From Net: NetName=GND Pin=Ss1-3
+Removed Pin From Net: NetName=SENSOR2 Pin=Ss2-2
+Removed Pin From Net: NetName=GND Pin=Ss2-3
+Removed Pin From Net: NetName=EN1 Pin=Step1-1
+Removed Pin From Net: NetName=DIR1 Pin=Step1-2
+Removed Pin From Net: NetName=PUL1 Pin=Step1-3
+Removed Pin From Net: NetName=GND Pin=Step1-4
+Removed Pin From Net: NetName=12V Pin= Step1 Source-1
+Removed Pin From Net: NetName=GND Pin= Step1 Source-2
+Removed Pin From Net: NetName=EN2 Pin=Step2-1
+Removed Pin From Net: NetName=DIR2 Pin=Step2-2
+Removed Pin From Net: NetName=PUL2 Pin=Step2-3
+Removed Pin From Net: NetName=GND Pin=Step2-4
+Removed Pin From Net: NetName=12V Pin=Step2 Source-1
+Removed Pin From Net: NetName=GND Pin=Step2 Source-2
+Removed Member From Class: ClassName=draft Member=Pump Source
+Removed Member From Class: ClassName=draft Member=Relay Source
+Removed Member From Class: ClassName=draft Member=Ss1
+Removed Member From Class: ClassName=draft Member=Ss2
+Removed Member From Class: ClassName=draft Member=Step1
+Removed Member From Class: ClassName=draft Member=Step2
+Removed Member From Class: ClassName=draft Member=Step2 Source
+Change Component Footprint: Designator=C2 Old Footprint=HDR2 New Footprint=HDR3
+Change Component Comment : Designator=C2 Old Comment=Header2 New Comment=Header3
+Added Component: Designator=C1(HDR3)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=C3(HDR2)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=C4(HDR3)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=C5(HDR5)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=C6(HDR2)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Component: Designator=SENSOR(HDR2)
+Add component (AddParameter): Name = "ComponentLink1 Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2 Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/em/datasheet/6130xx143121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created by"; Value = "Karrer Zheng"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Created Date"; Value = "29 March 2013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "W¨¹rth Elektronik eiSos GmbH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NoPins"; Value = "02"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "partNo"; Value = "613002143121"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=EN2 Pin=C2-1
+Added Pin To Net: NetName=DIR2 Pin=C2-2
+Added Pin To Net: NetName=PUL2 Pin=C2-3
+Added Pin To Net: NetName=12V Pin=C3-1
+Added Pin To Net: NetName=12V Pin=C3-2
+Added Pin To Net: NetName=EN1 Pin=C4-1
+Added Pin To Net: NetName=DIR1 Pin=C4-2
+Added Pin To Net: NetName=PUL1 Pin=C4-3
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=SENSOR1 Pin=SENSOR-1
+Added Pin To Net: NetName=SENSOR2 Pin=SENSOR-2
+Added Pin To Net: NetName=ARD GND Pin=Arduino1-GND
+Added Pin To Net: NetName=ARD GND Pin=Arduino1-GND
+Added Pin To Net: NetName=ARD GND Pin=Arduino1-GND
+Added Pin To Net: NetName=ARD GND Pin=Arduino1-GND
+Added Pin To Net: NetName=ARD GND Pin=Arduino1-GND
+Added Pin To Net: NetName=ARD GND Pin=Arduino1-GND
+Added Net: Name=ARD GND
+Added Pin To Net: NetName=ARD Power Pin=Arduino1-5V
+Added Net: Name=ARD Power
+Added Pin To Net: NetName=LM OUT + Pin=C1-1
+Added Pin To Net: NetName=LM OUT + Pin=C1-2
+Added Pin To Net: NetName=LM OUT + Pin=C1-3
+Added Net: Name=LM OUT +
+Added Pin To Net: NetName=LM OUT+ Pin=LM1-4
+Added Net: Name=LM OUT+
+Added Pin To Net: NetName=LM OUT- Pin=LM1-3
+Added Net: Name=LM OUT-
+Added Pin To Net: NetName=NetLED GND_1 Pin=LED GND-1
+Added Pin To Net: NetName=NetLED GND_1 Pin=LED GND-2
+Added Net: Name=NetLED GND_1
+Added Pin To Net: NetName=Pump1 - Pin=C5-1
+Added Pin To Net: NetName=Pump1 - Pin=C5-2
+Added Pin To Net: NetName=Pump1 - Pin=C5-3
+Added Pin To Net: NetName=Pump1 - Pin=C5-4
+Added Pin To Net: NetName=Pump1 - Pin=C5-5
+Added Net: Name=Pump1 -
+Added Member To Class: ClassName=draft Member=Component C1 Header3
+Added Member To Class: ClassName=draft Member=Component C3 Header2
+Added Member To Class: ClassName=draft Member=Component C4 Header3
+Added Member To Class: ClassName=draft Member=Component C5 Header5
+Added Member To Class: ClassName=draft Member=Component C6 Header2
+Added Member To Class: ClassName=draft Member=Component SENSOR Header2
