@@ -1,0 +1,8 @@
+Arduino
+1 LM2596
+2 Tb6600
+2 Máy bơm + 
+1 module 4 kênh
+2 Cảm biến hồng ngoại
+2 điện trở
+2 led

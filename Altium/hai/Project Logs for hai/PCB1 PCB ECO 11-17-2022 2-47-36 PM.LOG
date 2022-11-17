@@ -1,0 +1,213 @@
+Added Component: Designator=Arduino1(Arduino Nano)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = ""; Value = "Cau 5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Cau 1A"; VariantName = "[No Variations]"
+Added Component: Designator=H1(XH2.54M-8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH003366"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 8P XH2.54-8P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H2(XH2.54M-4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001285"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 4P XH2.54-4P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H3(XH2.54M-4)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001285"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 4P XH2.54-4P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H4(XH2.54M-2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001283"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 2P XH2.54-2P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H5(XH2.54M-2)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001283"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 2P XH2.54-2P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H6(XH2.54M-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001292"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 3P XH2.54-3P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=H7(XH2.54M-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH001292"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 3P XH2.54-3P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Component: Designator=LM1(LM2596_Module)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Module Relay1(CON 4 4EDG5.08)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH000979"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "CON 4 2EDG5.08-4P 5.08MM ( Xanh Cong)"; VariantName = "[No Variations]"
+Added Component: Designator=P1(CON 2 2EDG5.08)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH000759"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "CON 2 2EDG5.08-2P 5.08MM ( Xanh Cong)"; VariantName = "[No Variations]"
+Added Component: Designator=R1(tro vach 1/4w)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH006348"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Tr? V?ch 1/4w 1% 330R"; VariantName = "[No Variations]"
+Added Component: Designator=R2(tro vach 1/4w)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH006348"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Tr? V?ch 1/4w 1% 330R"; VariantName = "[No Variations]"
+Added Component: Designator=STEP1(CON 5 5EDG5.08)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH003589"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "CON 5 2EDG5.08-5P 5.08MM ( Xanh Cong)"; VariantName = "[No Variations]"
+Added Component: Designator=STEP2(CON 5 5EDG5.08)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH003589"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "CON 5 2EDG5.08-5P 5.08MM ( Xanh Cong)"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=Arduino1-5V
+Added Pin To Net: NetName=+5 Pin=H3-1
+Added Pin To Net: NetName=+5 Pin=H3-2
+Added Pin To Net: NetName=+5 Pin=H3-3
+Added Pin To Net: NetName=+5 Pin=H3-4
+Added Pin To Net: NetName=+5 Pin=H6-1
+Added Pin To Net: NetName=+5 Pin=H7-1
+Added Pin To Net: NetName=+5 Pin=LM1-4
+Added Pin To Net: NetName=+5 Pin=Module Relay1-4
+Added Pin To Net: NetName=+5 Pin=R1-1
+Added Pin To Net: NetName=+5 Pin=R2-1
+Added Net: Name=+5
+Added Pin To Net: NetName=+12 Pin=LM1-1
+Added Pin To Net: NetName=+12 Pin=P1-1
+Added Pin To Net: NetName=+12 Pin=STEP1-2
+Added Pin To Net: NetName=+12 Pin=STEP2-2
+Added Net: Name=+12
+Added Pin To Net: NetName=DIR1 Pin=Arduino1-A1
+Added Pin To Net: NetName=DIR1 Pin=STEP1-4
+Added Net: Name=DIR1
+Added Pin To Net: NetName=DIR2 Pin=Arduino1-A4
+Added Pin To Net: NetName=DIR2 Pin=STEP2-4
+Added Net: Name=DIR2
+Added Pin To Net: NetName=EN1 Pin=Arduino1-A0
+Added Pin To Net: NetName=EN1 Pin=STEP1-5
+Added Net: Name=EN1
+Added Pin To Net: NetName=EN2 Pin=Arduino1-A3
+Added Pin To Net: NetName=EN2 Pin=STEP2-5
+Added Net: Name=EN2
+Added Pin To Net: NetName=GND Pin=Arduino1-GND
+Added Pin To Net: NetName=GND Pin=Arduino1-GND
+Added Pin To Net: NetName=GND Pin=H2-1
+Added Pin To Net: NetName=GND Pin=H2-2
+Added Pin To Net: NetName=GND Pin=H2-3
+Added Pin To Net: NetName=GND Pin=H2-4
+Added Pin To Net: NetName=GND Pin=H6-2
+Added Pin To Net: NetName=GND Pin=H7-2
+Added Pin To Net: NetName=GND Pin=LM1-2
+Added Pin To Net: NetName=GND Pin=LM1-3
+Added Pin To Net: NetName=GND Pin=Module Relay1-3
+Added Pin To Net: NetName=GND Pin=Module Relay1-3
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=STEP1-1
+Added Pin To Net: NetName=GND Pin=STEP2-1
+Added Net: Name=GND
+Added Pin To Net: NetName=LED1 Pin=Arduino1-A6
+Added Pin To Net: NetName=LED1 Pin=H4-2
+Added Net: Name=LED1
+Added Pin To Net: NetName=LED2 Pin=Arduino1-A7
+Added Pin To Net: NetName=LED2 Pin=H5-2
+Added Net: Name=LED2
+Added Pin To Net: NetName=NetArduino1_D6 Pin=Arduino1-D6
+Added Pin To Net: NetName=NetArduino1_D6 Pin=H1-8
+Added Net: Name=NetArduino1_D6
+Added Pin To Net: NetName=NetArduino1_D7 Pin=Arduino1-D7
+Added Pin To Net: NetName=NetArduino1_D7 Pin=H1-7
+Added Net: Name=NetArduino1_D7
+Added Pin To Net: NetName=NetArduino1_D8 Pin=Arduino1-D8
+Added Pin To Net: NetName=NetArduino1_D8 Pin=H1-6
+Added Net: Name=NetArduino1_D8
+Added Pin To Net: NetName=NetArduino1_D9 Pin=Arduino1-D9
+Added Pin To Net: NetName=NetArduino1_D9 Pin=H1-5
+Added Net: Name=NetArduino1_D9
+Added Pin To Net: NetName=NetArduino1_D10 Pin=Arduino1-D10
+Added Pin To Net: NetName=NetArduino1_D10 Pin=H1-4
+Added Net: Name=NetArduino1_D10
+Added Pin To Net: NetName=NetArduino1_D11 Pin=Arduino1-D11
+Added Pin To Net: NetName=NetArduino1_D11 Pin=H1-3
+Added Net: Name=NetArduino1_D11
+Added Pin To Net: NetName=NetArduino1_D12 Pin=Arduino1-D12
+Added Pin To Net: NetName=NetArduino1_D12 Pin=H1-2
+Added Net: Name=NetArduino1_D12
+Added Pin To Net: NetName=NetArduino1_D13 Pin=Arduino1-D13
+Added Pin To Net: NetName=NetArduino1_D13 Pin=H1-1
+Added Net: Name=NetArduino1_D13
+Added Pin To Net: NetName=NetH4_1 Pin=H4-1
+Added Pin To Net: NetName=NetH4_1 Pin=R1-2
+Added Net: Name=NetH4_1
+Added Pin To Net: NetName=NetH5_1 Pin=H5-1
+Added Pin To Net: NetName=NetH5_1 Pin=R2-2
+Added Net: Name=NetH5_1
+Added Pin To Net: NetName=PUL1 Pin=Arduino1-A2
+Added Pin To Net: NetName=PUL1 Pin=STEP1-3
+Added Net: Name=PUL1
+Added Pin To Net: NetName=PUL2 Pin=Arduino1-A5
+Added Pin To Net: NetName=PUL2 Pin=STEP2-3
+Added Net: Name=PUL2
+Added Pin To Net: NetName=RELAY1 Pin=Arduino1-D4
+Added Pin To Net: NetName=RELAY1 Pin=Module Relay1-2
+Added Pin To Net: NetName=RELAY1 Pin=Module Relay1-2
+Added Net: Name=RELAY1
+Added Pin To Net: NetName=RELAY2 Pin=Arduino1-D5
+Added Pin To Net: NetName=RELAY2 Pin=Module Relay1-1
+Added Pin To Net: NetName=RELAY2 Pin=Module Relay1-1
+Added Net: Name=RELAY2
+Added Pin To Net: NetName=SENSOR1 Pin=Arduino1-D2
+Added Pin To Net: NetName=SENSOR1 Pin=H6-3
+Added Net: Name=SENSOR1
+Added Pin To Net: NetName=SENSOR2 Pin=Arduino1-D3
+Added Pin To Net: NetName=SENSOR2 Pin=H7-3
+Added Net: Name=SENSOR2
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

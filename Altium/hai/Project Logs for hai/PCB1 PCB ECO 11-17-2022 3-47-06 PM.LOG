@@ -1,0 +1,21 @@
+Change Component Designator: OldDesignator=Arduino? NewDesignator=Arduino1
+Change Component Designator: OldDesignator=H? NewDesignator=H1
+Added Component: Designator=Vit1(Vit M3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Vit2(Vit M3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Vit3(Vit M3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Vit4(Vit M3)
+Add component. Clean all parameters for all variants
+Change Net Name : Old Net Name=NetArduino?_8 New Net Name=NetArduino1_8
+Change Net Name : Old Net Name=NetArduino?_12 New Net Name=NetArduino1_12
+Change Net Name : Old Net Name=NetArduino?_13 New Net Name=NetArduino1_13
+Change Net Name : Old Net Name=NetArduino?_~9 New Net Name=NetArduino1_~9
+Change Net Name : Old Net Name=NetArduino?_~10 New Net Name=NetArduino1_~10
+Change Net Name : Old Net Name=NetArduino?_~11 New Net Name=NetArduino1_~11
+Added Member To Class: ClassName=Sheet1 Member=Component Vit1 Vit
+Added Member To Class: ClassName=Sheet1 Member=Component Vit2 Vit
+Added Member To Class: ClassName=Sheet1 Member=Component Vit3 Vit
+Added Member To Class: ClassName=Sheet1 Member=Component Vit4 Vit
+Added Room: Name=Sheet1

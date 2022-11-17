@@ -1,0 +1,49 @@
+Removed Pin From Net: NetName=SENSOR1 Pin=Arduino?-2
+Removed Pin From Net: NetName=RELAY1 Pin=Arduino?-4
+Removed Pin From Net: NetName=LED2 Pin=Arduino?-7
+Removed Pin From Net: NetName=EN1 Pin=Arduino?-A0
+Removed Pin From Net: NetName=DIR1 Pin=Arduino?-A1
+Removed Pin From Net: NetName=PUL1 Pin=Arduino?-A2
+Removed Pin From Net: NetName=EN2 Pin=Arduino?-A3
+Removed Pin From Net: NetName=DIR2 Pin=Arduino?-A4
+Removed Pin From Net: NetName=PUL2 Pin=Arduino?-A5
+Removed Pin From Net: NetName=SENSOR2 Pin=Arduino?-~3
+Removed Pin From Net: NetName=RELAY2 Pin=Arduino?-~5
+Removed Pin From Net: NetName=LED1 Pin=Arduino?-~6
+Change Component Footprint: Designator=H? Old Footprint=XH2.54M-6 New Footprint=XH2.54M-5
+Change component parameters: Designator = "H?"; Footprint = "XH2.54M-5"; UniqueID = "\CROHLTQH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH001298"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "Header 5P XH2.54-5P Ð?c Th?ng"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=EN1 Pin=Arduino?-2
+Added Pin To Net: NetName=PUL1 Pin=Arduino?-4
+Added Pin To Net: NetName=PUL2 Pin=Arduino?-7
+Added Pin To Net: NetName=SENSOR1 Pin=Arduino?-8
+Added Pin To Net: NetName=LED1 Pin=Arduino?-12
+Added Pin To Net: NetName=LED2 Pin=Arduino?-A0
+Added Pin To Net: NetName=DIR1 Pin=Arduino?-~3
+Added Pin To Net: NetName=EN2 Pin=Arduino?-~5
+Added Pin To Net: NetName=DIR2 Pin=Arduino?-~6
+Added Pin To Net: NetName=SENSOR2 Pin=Arduino?-~9
+Added Pin To Net: NetName=RELAY1 Pin=Arduino?-~10
+Added Pin To Net: NetName=RELAY2 Pin=Arduino?-~11
+Added Pin To Net: NetName=NetArduino?_A1 Pin=Arduino?-A1
+Added Pin To Net: NetName=NetArduino?_A1 Pin=H?-1
+Added Net: Name=NetArduino?_A1
+Added Pin To Net: NetName=NetArduino?_A2 Pin=Arduino?-A2
+Added Pin To Net: NetName=NetArduino?_A2 Pin=H?-2
+Added Net: Name=NetArduino?_A2
+Added Pin To Net: NetName=NetArduino?_A3 Pin=Arduino?-A3
+Added Pin To Net: NetName=NetArduino?_A3 Pin=H?-3
+Added Net: Name=NetArduino?_A3
+Added Pin To Net: NetName=NetArduino?_A4 Pin=Arduino?-A4
+Added Pin To Net: NetName=NetArduino?_A4 Pin=H?-4
+Added Net: Name=NetArduino?_A4
+Added Pin To Net: NetName=NetArduino?_A5 Pin=Arduino?-A5
+Added Pin To Net: NetName=NetArduino?_A5 Pin=H?-5
+Added Net: Name=NetArduino?_A5
+Added Room: Name=Sheet1

@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=PUL1 Pin=STEP1-3
+Removed Pin From Net: NetName=EN1 Pin=STEP1-5
+Removed Pin From Net: NetName=PUL2 Pin=STEP2-3
+Removed Pin From Net: NetName=EN2 Pin=STEP2-5
+Added Pin To Net: NetName=EN1 Pin=STEP1-3
+Added Pin To Net: NetName=PUL1 Pin=STEP1-5
+Added Pin To Net: NetName=EN2 Pin=STEP2-3
+Added Pin To Net: NetName=PUL2 Pin=STEP2-5
+Added Room: Name=Sheet1
