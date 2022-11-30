@@ -11,8 +11,9 @@ void setup() {
 }
 
 void loop() {
+  
   digitalWrite(dirPin,HIGH); // Enables the motor to move in a particular direction
-  for(int x = 0; x < 800; x++) {
+  for(int x = 0; x < 200; x++) {
     digitalWrite(stepPin,LOW); 
     delayMicroseconds(500); 
     digitalWrite(stepPin,HIGH); 
