@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1024</width>
-    <height>600</height>
+    <width>1440</width>
+    <height>868</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,17 +20,17 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>212</x>
-      <y>250</y>
-      <width>600</width>
-      <height>100</height>
+      <x>165</x>
+      <y>350</y>
+      <width>1100</width>
+      <height>150</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
 background-color: rgb(155, 230, 0);
-font: 36pt &quot;MS Shell Dlg 2&quot;;
-border-radius: 25px;</string>
+font: 80pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 70px;</string>
     </property>
     <property name="text">
      <string>HAVE A NICE DAY</string>
