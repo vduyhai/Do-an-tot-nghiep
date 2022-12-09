@@ -125,8 +125,9 @@ class MainWindow(QMainWindow):
             self.uic1.next.setEnabled(True)
 
     def send(self):
-        print(cup[-1])
-        print(drinks[-1])
+        #print(cup[-1])
+        #print(drinks[-1])
+        print(cup[-1] + "_" + drinks[-1])
         #ser.write(bytes(cup[-1] + "_" + drinks[-1], 'utf8'))
 
     def show_home(self):
