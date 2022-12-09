@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'pick_test.ui'
+# Form implementation generated from reading ui file '.\pick_test.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.2
 #
@@ -55,6 +55,9 @@ class Ui_MainWindow1(object):
 "\n"
 "QPushButton::pressed{\n"
 "background-color:rgb(115, 230, 0);\n"
+"font: 35pt \"MS Shell Dlg 2\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 40px;\n"
 "}\n"
 "")
         self.personal.setObjectName("personal")
@@ -69,6 +72,9 @@ class Ui_MainWindow1(object):
 "\n"
 "QPushButton::pressed{\n"
 "background-color:rgb(115, 230, 0);\n"
+"font: 35pt \"MS Shell Dlg 2\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 40px;\n"
 "}")
         self.plastic.setObjectName("plastic")
         self.drinks = QtWidgets.QLineEdit(self.centralwidget)
@@ -92,6 +98,9 @@ class Ui_MainWindow1(object):
 "\n"
 "QPushButton::pressed{\n"
 "background-color:rgb(115, 230, 0);\n"
+"font: 35pt \"MS Shell Dlg 2\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 40px;\n"
 "}")
         self.coffee.setObjectName("coffee")
         self.tea = QtWidgets.QPushButton(self.centralwidget)
@@ -105,6 +114,9 @@ class Ui_MainWindow1(object):
 "\n"
 "QPushButton::pressed{\n"
 "background-color:rgb(115, 230, 0);\n"
+"font: 35pt \"MS Shell Dlg 2\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-radius: 40px;\n"
 "}")
         self.tea.setObjectName("tea")
         self.next = QtWidgets.QPushButton(self.centralwidget)

@@ -51,65 +51,65 @@ class MainWindow(QMainWindow):
 
     def changePersonalCupBtnColor(self):
         self.uic1.personal.setStyleSheet("QPushButton{\n"
-                                        "font: 18pt \"MS Shell Dlg 2\";\n"
+                                        "background-color:rgb(115, 230, 0);\n"
+                                        "font: 35pt \"MS Shell Dlg 2\";\n"
                                         "color: rgb(255, 255, 255);\n"
-                                        "background-color: rgb(115, 230, 0);\n"
-                                        "border-radius: 25px;\n"
+                                        "border-radius: 40px;\n"
                                         "}\n")
 
         self.uic1.plastic.setStyleSheet("QPushButton{\n"
-                                       "font: 18pt \"MS Shell Dlg 2\";\n"
-                                       "color: rgb(255, 255, 255);\n"
-                                       "background-color: rgb(0, 170, 0);\n"
-                                       "border-radius: 25px;\n"
+                                       "font: 35pt \"MS Shell Dlg 2\";\n"
+                                        "color: rgb(255, 255, 255);\n"
+                                        "background-color: rgb(0, 170, 0);\n"
+                                        "border-radius: 40px;\n"
                                        "}\n")
 
         self.c.signal1.emit('personal')
 
     def changePlasticCupBtnColor(self):
         self.uic1.plastic.setStyleSheet("QPushButton{\n"
-                                       "font: 18pt \"MS Shell Dlg 2\";\n"
-                                       "color: rgb(255, 255, 255);\n"
-                                       "background-color: rgb(115, 230, 0);\n"
-                                       "border-radius: 25px;\n"
-                                       "}\n")
+                                        "background-color:rgb(115, 230, 0);\n"
+                                        "font: 35pt \"MS Shell Dlg 2\";\n"
+                                        "color: rgb(255, 255, 255);\n"
+                                        "border-radius: 40px;\n"
+                                        "}\n")
         self.uic1.personal.setStyleSheet("QPushButton{\n"
-                                        "font: 18pt \"MS Shell Dlg 2\";\n"
+                                       "font: 35pt \"MS Shell Dlg 2\";\n"
                                         "color: rgb(255, 255, 255);\n"
                                         "background-color: rgb(0, 170, 0);\n"
-                                        "border-radius: 25px;\n"
-                                        "}\n")
+                                        "border-radius: 40px;\n"
+                                       "}\n")
 
         self.c.signal1.emit('plastic')
 
     def changeCoffeeBtnColor(self):
         self.uic1.coffee.setStyleSheet("QPushButton{\n"
-                                      "font: 18pt \"MS Shell Dlg 2\";\n"
-                                      "color: rgb(255, 255, 255);\n"
-                                      "background-color: rgb(115, 230, 0);\n"
-                                      "border-radius: 25px;\n"
-                                      "}\n")
+                                        "background-color:rgb(115, 230, 0);\n"
+                                        "font: 35pt \"MS Shell Dlg 2\";\n"
+                                        "color: rgb(255, 255, 255);\n"
+                                        "border-radius: 40px;\n"
+                                        "}\n")
         self.uic1.tea.setStyleSheet("QPushButton{\n"
-                                   "font: 18pt \"MS Shell Dlg 2\";\n"
-                                   "color: rgb(255, 255, 255);\n"
-                                   "background-color: rgb(0, 170, 0);\n"
-                                   "border-radius: 25px;\n"
-                                   "}\n")
+                                       "font: 35pt \"MS Shell Dlg 2\";\n"
+                                        "color: rgb(255, 255, 255);\n"
+                                        "background-color: rgb(0, 170, 0);\n"
+                                        "border-radius: 40px;\n"
+                                       "}\n")
         self.c.signal2.emit('coffee')
 
     def changeTeaBtnColor(self):
         self.uic1.tea.setStyleSheet("QPushButton{\n"
-                                   "font: 18pt \"MS Shell Dlg 2\";\n"
-                                   "color: rgb(255, 255, 255);\n"
-                                   "background-color: rgb(115, 230, 0);\n"
-                                   "border-radius: 25px;\n"
-                                   "}\n")
+                                        "background-color:rgb(115, 230, 0);\n"
+                                        "font: 35pt \"MS Shell Dlg 2\";\n"
+                                        "color: rgb(255, 255, 255);\n"
+                                        "border-radius: 40px;\n"
+                                        "}\n")
         self.uic1.coffee.setStyleSheet("QPushButton{\n"
-                                      "font: 18pt \"MS Shell Dlg 2\";\n"
-                                      "color: rgb(255, 255, 255);\n"
-                                      "background-color: rgb(0, 170, 0);\n"
-                                      "border-radius: 25px;\n"
-                                      "}\n")
+                                       "font: 35pt \"MS Shell Dlg 2\";\n"
+                                        "color: rgb(255, 255, 255);\n"
+                                        "background-color: rgb(0, 170, 0);\n"
+                                        "border-radius: 40px;\n"
+                                       "}\n")
         self.c.signal2.emit('tea')
 
     def printSignal1(self, x):
