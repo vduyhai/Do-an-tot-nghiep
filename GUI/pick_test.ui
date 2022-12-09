@@ -29,7 +29,7 @@
     <property name="font">
      <font>
       <family>Wingdings</family>
-      <pointsize>40</pointsize>
+      <pointsize>60</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -37,7 +37,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-font: 40pt &quot;Wingdings&quot;;
+font: 60pt &quot;Wingdings&quot;;
 background-color: rgb(0, 95, 55);
 color: rgb(0, 170, 0);
 border-radius: 15px;
@@ -48,7 +48,7 @@ color:rgb(115, 230, 0);
 }</string>
     </property>
     <property name="text">
-     <string>Û</string>
+     <string>⇦</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="cup">
@@ -146,7 +146,7 @@ padding-bottom: 5px;
    </widget>
    <widget class="QPushButton" name="coffee">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -199,20 +199,20 @@ background-color:rgb(115, 230, 0);
    </widget>
    <widget class="QPushButton" name="next">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
       <x>1310</x>
       <y>50</y>
-      <width>60</width>
-      <height>60</height>
+      <width>80</width>
+      <height>80</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Wingdings</family>
-      <pointsize>30</pointsize>
+      <pointsize>60</pointsize>
       <weight>50</weight>
       <italic>false</italic>
       <bold>false</bold>
@@ -220,7 +220,7 @@ background-color:rgb(115, 230, 0);
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-font: 30pt &quot;Wingdings&quot;;
+font: 60pt &quot;Wingdings&quot;;
 background-color: rgb(0, 95, 55);
 color: rgb(0, 170, 0);
 border-radius: 15px;
@@ -231,7 +231,7 @@ color:rgb(115, 230, 0);
 }</string>
     </property>
     <property name="text">
-     <string>Ü</string>
+     <string>⇨</string>
     </property>
    </widget>
   </widget>
