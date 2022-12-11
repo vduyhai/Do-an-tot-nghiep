@@ -28,6 +28,8 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.uic = Ui_MainWindow()
+        self.setWindowFlags(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
         self.uic.setupUi(self)
         self.uic.start.clicked.connect(self.show_pick)
 
