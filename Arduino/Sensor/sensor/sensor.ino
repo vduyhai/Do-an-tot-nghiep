@@ -1,5 +1,5 @@
-int sensor1 = 4;
-int sensor2 = 5;
+int sensor1 = 2;
+int sensor2 = 3;
 
 void setup() {
   pinMode(sensor1, INPUT);
@@ -8,7 +8,7 @@ void setup() {
 }
 
 void loop() {
-  int x = digitalRead(sensor1);
+  int x = digitalRead(sensor2);
   Serial.println(x);
 //  int y = digitalRead(sensor2);
 //  Serial.println("ss2", y);

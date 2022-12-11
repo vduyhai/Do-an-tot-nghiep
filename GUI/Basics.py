@@ -6,11 +6,11 @@ mpDraw = mp.solutions.drawing_utils
 mpPose = mp.solutions.pose
 pose = mpPose.Pose()
 
-cap = cv.VideoCapture('squat1.mp4')
+cap = cv.VideoCapture(0)
 pTime = 0
 while True:
     success, img = cap.read()
-    img = cv.resize(img, (1440, 720))
+    # img = cv.resize(img, (1440, 720))
     imgRGB = cv.cvtColor(img, cv.COLOR_BGR2RGB)
     results = pose.process(imgRGB)
     # print(results.pose_landmarks)
@@ -26,8 +26,7 @@ while True:
     fps = 1 / (cTime - pTime)
     pTime = cTime
 
-    cv.putText(img, str(int(fps)), (70, 50), cv.FONT_HERSHEY_PLAIN, 3,
-                (255, 0, 0), 3)
+
 
     cv.imshow("Image", img)
     cv.waitKey(1)

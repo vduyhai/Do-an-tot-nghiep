@@ -1,7 +1,7 @@
 import sys
 import numpy as np
 from PyQt5 import QtGui
-from PyQt5.QtCore import *
+from PyQt5.QtCore import Qt, pyqtSignal, QTimer, QThread, QObject
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from serial import Serial
@@ -32,6 +32,10 @@ class MainWindow(QMainWindow):
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.uic.setupUi(self)
         self.uic.start.clicked.connect(self.show_pick)
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_Escape:
+            self.close()
 
     def show_pick(self):
         print('show pick')
@@ -242,6 +246,7 @@ class capture_video(QThread):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    app.setOverrideCursor(QCursor(Qt.BlankCursor))
     main_win = MainWindow()
     main_win.show()
     sys.exit(app.exec_())
