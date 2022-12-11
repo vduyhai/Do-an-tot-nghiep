@@ -32,6 +32,10 @@ class MainWindow(QMainWindow):
         self.setAttribute(Qt.WA_TranslucentBackground)
         self.uic.setupUi(self)
         self.uic.start.clicked.connect(self.show_pick)
+        
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_Escape:
+            self.close()
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_Escape:
@@ -211,7 +215,7 @@ class capture_video(QThread):
         nos = 0
         dir = 0
         i = 0
-        cap = cv2.VideoCapture('squat1.mp4')  # 'squat1.mp4'
+        cap = cv2.VideoCapture(0)  # 'squat1.mp4'
         while self.threadactive:
             # print(i)
             # i = i + 1
