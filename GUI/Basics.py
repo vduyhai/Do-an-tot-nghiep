@@ -6,21 +6,16 @@ mpDraw = mp.solutions.drawing_utils
 mpPose = mp.solutions.pose
 pose = mpPose.Pose()
 
-cap = cv.VideoCapture(0)
+cap = cv.VideoCapture(1)
 pTime = 0
 while True:
     success, img = cap.read()
-    # img = cv.resize(img, (1440, 720))
+    img = cv.resize(img, None, fx=1.4, fy=1.4)
     imgRGB = cv.cvtColor(img, cv.COLOR_BGR2RGB)
     results = pose.process(imgRGB)
     # print(results.pose_landmarks)
     if results.pose_landmarks:
-        mpDraw.draw_landmarks(img, results.pose_landmarks, mpPose.POSE_CONNECTIONS)
-        for id, lm in enumerate(results.pose_landmarks.landmark):
-            h, w, c = img.shape
-            print(id, lm)
-            cx, cy = int(lm.x * w), int(lm.y * h)
-            cv.circle(img, (cx, cy), 5, (255, 0, 0), cv.FILLED)
+        mpDraw.draw_landmarks(img, results.pose_landmarks)
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)

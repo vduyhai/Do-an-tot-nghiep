@@ -9,6 +9,7 @@ from home import Ui_MainWindow
 from pick_test import Ui_MainWindow1
 from camera import Ui_MainWindow2
 from bye import Ui_MainWindow3
+from personal import Ui_MainWindow4
 import cv2
 import PoseModule as pm
 import time
@@ -52,6 +53,7 @@ class MainWindow(QMainWindow):
         self.uic1.plastic.clicked.connect(self.changePlasticCupBtnColor)
         self.uic1.coffee.clicked.connect(self.changeCoffeeBtnColor)
         self.uic1.tea.clicked.connect(self.changeTeaBtnColor)
+
         self.uic1.next.clicked.connect(self.show_camera)
 
         self.c.signal1.connect(self.printSignal1)
@@ -74,6 +76,7 @@ class MainWindow(QMainWindow):
                                         "border-radius: 40px;\n"
                                        "}\n")
 
+        self.uic1.next.clicked.connect(self.show_wait)
         self.c.signal1.emit('personal')
 
     def changePlasticCupBtnColor(self):
@@ -145,6 +148,16 @@ class MainWindow(QMainWindow):
         self.uic = Ui_MainWindow()
         self.uic.setupUi(self)
         self.uic.start.clicked.connect(self.show_pick)
+
+    def show_wait(self):
+        print('show wait')
+        self.uic4 = Ui_MainWindow4()
+        self.uic4.setupUi(self)
+        self.my_qtimer = QTimer(self)
+        self.my_qtimer.timeout.connect(self.show_camera)
+        self.my_qtimer.start(2500)
+        self.my_qtimer.timeout.connect(self.my_qtimer.disconnect)
+        # self.show_camera()
 
     def show_camera(self):
         print('show camera ')

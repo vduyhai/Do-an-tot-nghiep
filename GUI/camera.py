@@ -11,10 +11,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow2(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1440, 900)
+        MainWindow.resize(1440, 868)
         MainWindow.setStyleSheet("background-color: rgb(0, 95, 55);")
-        # MainWindow.setWindowFlags(QtCore.Qt.FramelessWindowHint)
-        # MainWindow.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
@@ -68,7 +66,7 @@ class Ui_MainWindow2(object):
         self.cancel.setObjectName("cancel")
         self.camera = QtWidgets.QLabel(self.centralwidget)
         self.camera.setGeometry(QtCore.QRect(300, 250, 300, 480))
-        self.camera.setFrameShape(QtWidgets.QFrame.Box)
+        self.camera.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.camera.setText("")
         self.camera.setObjectName("camera")
         self.cancel_2 = QtWidgets.QPushButton(self.centralwidget)
